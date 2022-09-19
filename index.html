@@ -8,11 +8,11 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="Description">
   <title>Книжный уютный</title>
-  <link rel="stylesheet" href="css/style.min.css?_v=20220919000214">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220919031001">
   <link rel="shortcut icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap&_v=20220919000214" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap&_v=20220919031001" rel="stylesheet">
 </head>
 
 
@@ -82,19 +82,19 @@
     </div>
     <div class="actions-books__item">
       <button class="actions-books__button">ПОКАЗАТЬ ДРУГИЕ КНИГИ</button>
-      <button class="actions-books__button actions-books__button_arrow">ОТЛОЖЕННЫЕ КНИГИ</button>
+      <button class="actions-books__button actions-books__button_book-box actions-books__button_arrow">ОТЛОЖЕННЫЕ КНИГИ</button>
     </div>
   </div>
   <div class="books__inner">
     <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -113,13 +113,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -138,13 +138,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -163,13 +163,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -188,13 +188,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -213,67 +213,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
-    <div class="book-card__pages">461 стр</div>
-    
-    <div class="book-card__prices" hidden>
-      
-      <div class="book-card__old-price">400 руб</div>
-      
-      <div class="book-card__price">270 руб</div>
-    </div>
-    
-  </div>
-  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-  </p>
-</div>
-<div class="book-card">
-  <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
-    <div class="book-card__cover">
-      <div class="book-card__image-ibg">
-        <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
-    </div>
-    <div class="book-card__label">Космическая фантастика</div>
-    <div class="book-card__pages">450 стр</div>
-    
-    <div class="book-card__prices" hidden>
-      
-      <div class="book-card__old-price">400 руб</div>
-      
-      <div class="book-card__price">270 руб</div>
-    </div>
-    
-  </div>
-  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-  </p>
-</div>
-<div class="book-card">
-  <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
-    <div class="book-card__cover">
-      <div class="book-card__image-ibg">
-        <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
-    </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -294,13 +240,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -321,13 +267,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -348,13 +294,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -375,13 +321,67 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
+    <div class="book-card__pages">461 стр</div>
+    
+    <div class="book-card__prices" hidden>
+      
+      <div class="book-card__old-price">400 руб</div>
+      
+      <div class="book-card__price">270 руб</div>
+    </div>
+    
+  </div>
+  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+  </p>
+</div>
+<div class="book-card">
+  <div class="book-card__inner">
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
+    <div class="book-card__cover">
+      <a href="#" class="book-card__image-ibg">
+        <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
+      </a>
+    </div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
+    <div class="book-card__pages">450 стр</div>
+    
+    <div class="book-card__prices" hidden>
+      
+      <div class="book-card__old-price">400 руб</div>
+      
+      <div class="book-card__price">270 руб</div>
+    </div>
+    
+  </div>
+  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+  </p>
+</div>
+<div class="book-card">
+  <div class="book-card__inner">
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
+    <div class="book-card__cover">
+      <a href="#" class="book-card__image-ibg">
+        <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
+      </a>
+    </div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
   </div>
@@ -395,13 +395,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
   </div>
@@ -415,13 +415,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
   </div>
@@ -435,13 +435,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
   </div>
@@ -455,13 +455,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
   </div>
@@ -475,13 +475,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
   </div>
@@ -495,13 +495,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
   </div>
@@ -515,13 +515,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
   </div>
@@ -535,13 +535,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
   </div>
@@ -566,15 +566,15 @@
       <div class="slider-aside__wrapper swiper-wrapper">
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Пока дышу</div>
+            <a href="#" class="comment-card__label">Пока дышу</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Наталья Ильина</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/1.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -586,15 +586,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Ревизор и его цирк</div>
+            <a href="#" class="comment-card__label">Ревизор и его цирк</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Нина Цуканова</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/2.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -605,15 +605,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Тайна дома № 12...</div>
+            <a href="#" class="comment-card__label">Тайна дома № 12...</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Владимир Торин</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/3.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -624,15 +624,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">По-другому</div>
+            <a href="#" class="comment-card__label">По-другому</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Анна Евдо</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/4.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -643,15 +643,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Железо и серебро</div>
+            <a href="#" class="comment-card__label">Железо и серебро</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Мария Гуцол</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/5.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -662,15 +662,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Звезды малого круга</div>
+            <a href="#" class="comment-card__label">Звезды малого круга</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Олария Тойе</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -681,15 +681,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Звезды малого круга</div>
+            <a href="#" class="comment-card__label">Звезды малого круга</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Олария Тойе</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -700,15 +700,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Звезды малого круга</div>
+            <a href="#" class="comment-card__label">Звезды малого круга</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Олария Тойе</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -719,15 +719,15 @@
         </article>
         <article class="slider-aside__slide comment-card swiper-slide">
           <div class="comment-card__header">
-            <div class="comment-card__label">Звезды малого круга</div>
+            <a href="#" class="comment-card__label">Звезды малого круга</a>
             <div class="comment-card__date">22.05.2022</div>
           </div>
           <div class="comment-card__author">Олария Тойе</div>
           <div class="comment-card__inner">
             <div class="comment-card__cover">
-              <div class="comment-card__image-ibg">
+              <a href="#" class="comment-card__image-ibg">
                 <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </div>
+              </a>
             </div>
             <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
               менее
@@ -751,13 +751,13 @@
     <div class="books__inner">
       <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -776,13 +776,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -801,13 +801,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -826,13 +826,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -851,13 +851,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -876,67 +876,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
-    <div class="book-card__pages">461 стр</div>
-    
-    <div class="book-card__prices" hidden>
-      
-      <div class="book-card__old-price">400 руб</div>
-      
-      <div class="book-card__price">270 руб</div>
-    </div>
-    
-  </div>
-  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-  </p>
-</div>
-<div class="book-card">
-  <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
-    <div class="book-card__cover">
-      <div class="book-card__image-ibg">
-        <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
-    </div>
-    <div class="book-card__label">Космическая фантастика</div>
-    <div class="book-card__pages">450 стр</div>
-    
-    <div class="book-card__prices" hidden>
-      
-      <div class="book-card__old-price">400 руб</div>
-      
-      <div class="book-card__price">270 руб</div>
-    </div>
-    
-  </div>
-  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
-    которое не получается при простой
-  </p>
-</div>
-<div class="book-card">
-  <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
-    <div class="book-card__cover">
-      <div class="book-card__image-ibg">
-        <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
-    </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -957,13 +903,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -984,13 +930,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -1011,13 +957,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
     <div class="book-card__prices" hidden>
@@ -1038,13 +984,67 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
+    <div class="book-card__pages">461 стр</div>
+    
+    <div class="book-card__prices" hidden>
+      
+      <div class="book-card__old-price">400 руб</div>
+      
+      <div class="book-card__price">270 руб</div>
+    </div>
+    
+  </div>
+  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+  </p>
+</div>
+<div class="book-card">
+  <div class="book-card__inner">
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
+    <div class="book-card__cover">
+      <a href="#" class="book-card__image-ibg">
+        <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
+      </a>
+    </div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
+    <div class="book-card__pages">450 стр</div>
+    
+    <div class="book-card__prices" hidden>
+      
+      <div class="book-card__old-price">400 руб</div>
+      
+      <div class="book-card__price">270 руб</div>
+    </div>
+    
+  </div>
+  <p class="book-card__text" hidden>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+    тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах,
+    которое не получается при простой
+  </p>
+</div>
+<div class="book-card">
+  <div class="book-card__inner">
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
+    <div class="book-card__cover">
+      <a href="#" class="book-card__image-ibg">
+        <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
+      </a>
+    </div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
   </div>
@@ -1058,13 +1058,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/1.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Космическая фантастика</div>
+    <a href="#" class="book-card__label">Космическая фантастика</a>
     <div class="book-card__pages">450 стр</div>
     
   </div>
@@ -1078,13 +1078,13 @@
 </div>
 <div class="book-card">
   <div class="book-card__inner">
-    <button class="book-card__button">Отложить</button>
+    <button data-changed-text="Отложено" class="book-card__button">Отложить</button>
     <div class="book-card__cover">
-      <div class="book-card__image-ibg">
+      <a href="#" class="book-card__image-ibg">
         <img src="img/images/book/2.jpg" alt="Book cover" width="176" height="246">
-      </div>
+      </a>
     </div>
-    <div class="book-card__label">Стимпанк</div>
+    <a href="#" class="book-card__label">Стимпанк</a>
     <div class="book-card__pages">461 стр</div>
     
   </div>
@@ -1111,15 +1111,15 @@
         <div class="slider-blog__wrapper swiper-wrapper">
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Пока дышу</div>
+              <a href="#" class="comment-card__label">Пока дышу</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Наталья Ильина</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/1.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1131,15 +1131,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Ревизор и его цирк</div>
+              <a href="#" class="comment-card__label">Ревизор и его цирк</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Нина Цуканова</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/2.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1150,15 +1150,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Тайна дома № 12...</div>
+              <a href="#" class="comment-card__label">Тайна дома № 12...</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Владимир Торин</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/3.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1169,15 +1169,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">По-другому</div>
+              <a href="#" class="comment-card__label">По-другому</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Анна Евдо</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/4.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1188,15 +1188,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Железо и серебро</div>
+              <a href="#" class="comment-card__label">Железо и серебро</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Мария Гуцол</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/5.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1207,15 +1207,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Звезды малого круга</div>
+              <a href="#" class="comment-card__label">Звезды малого круга</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Олария Тойе</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1226,15 +1226,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Звезды малого круга</div>
+              <a href="#" class="comment-card__label">Звезды малого круга</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Олария Тойе</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1245,15 +1245,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Звезды малого круга</div>
+              <a href="#" class="comment-card__label">Звезды малого круга</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Олария Тойе</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1264,15 +1264,15 @@
           </article>
           <article class="slider-blog__slide comment-card swiper-slide">
             <div class="comment-card__header">
-              <div class="comment-card__label">Звезды малого круга</div>
+              <a href="#" class="comment-card__label">Звезды малого круга</a>
               <div class="comment-card__date">22.05.2022</div>
             </div>
             <div class="comment-card__author">Олария Тойе</div>
             <div class="comment-card__inner">
               <div class="comment-card__cover">
-                <div class="comment-card__image-ibg">
+                <a href="#" class="comment-card__image-ibg">
                   <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </div>
+                </a>
               </div>
               <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
                 менее
@@ -1303,7 +1303,7 @@
 </footer>
 
   </div>
-  <script src="js/script.min.js?_v=20220919000214"></script>
+  <script src="js/script.min.js?_v=20220919031001"></script>
 </body>
 
 </html>
