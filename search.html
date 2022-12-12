@@ -16,7 +16,7 @@
 </head>
 
 
-<body data-test="true">
+<body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="eye" viewBox="0 0 442.04 442.04">
     <g>
@@ -68,17 +68,6 @@
         <a href="#" class="logo__image-ibg">
           <img src="img/logo.svg" alt="Logo" width="982" height="141">
         </a>
-        
-        <div data-da=".actions-header__inner,992,2" class="logo__actions actions-books">
-          <div class="actions-books__item">
-            <button class="actions-books__button">КНИГА ПО НАСТРОЕНИЮ:</button>
-            <button data-popup-target="filter" class="actions-books__button">ФИЛЬТР:</button>
-          </div>
-          <div class="actions-books__item">
-            <button class="actions-books__button">ПОКАЗАТЬ ДРУГИЕ КНИГИ</button>
-            <button class="actions-books__button actions-books__button_book-box actions-books__button_arrow">ОТЛОЖЕННЫЕ КНИГИ</button>
-          </div>
-        </div>
         
       </div>
       <div class="header__actions actions-header">
@@ -188,79 +177,192 @@
 </header>
 
     <main class="main">
-      <section class="add-home">
-  <div class="add-home__container">
-    <div class="add-home__inner"></div>
-  </div>
-</section>
-
-<section class="recomendation-home">
-  <div class="recomendation-home__container">
-    <div class="recomendation-home__inner">
-      <div class="arrows-slider-recomendation-home-prev"></div>
-      <div class="arrows-slider-recomendation-home-next"></div>
-      <div class="recomendation-home__slider slider-recomendation-home swiper">
-        <div class="slider-recomendation-home__wrapper swiper-wrapper">
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
+      <section class="main-book-page">
+  <div class="main-book-page__container">
+    <aside class="main-book-page__asaid asaid-book-page asaid-book-page_not-border">
+  <div class="filter filter_not-fixed" id="filter" hidden>
+    <div class="filter__inner">
+      <form action="#" class="filter__form form-filter" id="form-filter">
+        <div class="form-filter__title">ФИЛЬТР:</div>
+        <div class="form-filter__checkboxes">
+          <input type="checkbox" name="form-filter-journal" id="form-filter-journal">
+          <label tabindex="0" for="form-filter-journal">Крафтовый журнал</label>
+          <input type="checkbox" name="form-filter-shtormo" id="form-filter-shtormo">
+          <label tabindex="0" for="form-filter-shtormo">Штормо-книги</label>
+        </div>
+        <div data-spollers class="form-filter__spoller spoller-form-filter">
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">КНИГА ПО НАСТРОЕНИЮ:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-filter-mood-1" id="spoller-form-filter-mood-1">
+              <label tabindex="0" for="spoller-form-filter-mood-1">Настроение</label>
+              <input type="checkbox" name="spoller-form-filter-mood-2" id="spoller-form-filter-mood-2">
+              <label tabindex="0" for="spoller-form-filter-mood-2">Настроение</label>
+              <input type="checkbox" name="spoller-form-filter-mood-3" id="spoller-form-filter-mood-3">
+              <label tabindex="0" for="spoller-form-filter-mood-3">Настроение</label>
+              <input type="checkbox" name="spoller-form-filter-mood-4" id="spoller-form-filter-mood-4">
+              <label tabindex="0" for="spoller-form-filter-mood-4">Настроение</label>
+              <input type="checkbox" name="spoller-form-filter-mood-5" id="spoller-form-filter-mood-5">
+              <label tabindex="0" for="spoller-form-filter-mood-5">Настроение</label>
+              <input type="checkbox" name="spoller-form-filter-mood-6" id="spoller-form-filter-mood-6">
+              <label tabindex="0" for="spoller-form-filter-mood-6">Настроение</label>
             </div>
           </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/2.jpg" alt="Book cover" width="130" height="184">
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">ФОРМА:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-filter-form-1" id="spoller-form-filter-form-1">
+              <label tabindex="0" for="spoller-form-filter-form-1">Роман</label>
+              <input type="checkbox" name="spoller-form-filter-form-2" id="spoller-form-filter-form-2">
+              <label tabindex="0" for="spoller-form-filter-form-2">Повесть</label>
+              <input type="checkbox" name="spoller-form-filter-form-3" id="spoller-form-filter-form-3">
+              <label tabindex="0" for="spoller-form-filter-form-3">Рассказ</label>
+              <input type="checkbox" name="spoller-form-filter-form-4" id="spoller-form-filter-form-4">
+              <label tabindex="0" for="spoller-form-filter-form-4">Сборник</label>
+              <input type="checkbox" name="spoller-form-filter-form-5" id="spoller-form-filter-form-5">
+              <label tabindex="0" for="spoller-form-filter-form-5">Поэма</label>
             </div>
           </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">ЖАНР:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-filter-genre-1" id="spoller-form-filter-genre-1">
+              <label tabindex="0" for="spoller-form-filter-genre-1">Жанр</label>
+              <input type="checkbox" name="spoller-form-filter-genre-2" id="spoller-form-filter-genre-2">
+              <label tabindex="0" for="spoller-form-filter-genre-2">Жанр</label>
+              <input type="checkbox" name="spoller-form-filter-genre-3" id="spoller-form-filter-genre-3">
+              <label tabindex="0" for="spoller-form-filter-genre-3">Жанр</label>
+              <input type="checkbox" name="spoller-form-filter-genre-4" id="spoller-form-filter-genre-4">
+              <label tabindex="0" for="spoller-form-filter-genre-4">Жанр</label>
+              <input type="checkbox" name="spoller-form-filter-genre-5" id="spoller-form-filter-genre-5">
+              <label tabindex="0" for="spoller-form-filter-genre-5">Жанр</label>
+              <input type="checkbox" name="spoller-form-filter-genre-6" id="spoller-form-filter-genre-6">
+              <label tabindex="0" for="spoller-form-filter-genre-6">Жанр</label>
             </div>
           </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/2.jpg" alt="Book cover" width="130" height="184">
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">ВРЕМЯ ДЕЙСТВИЯ:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-filter-time-1" id="spoller-form-filter-time-1">
+              <label tabindex="0" for="spoller-form-filter-time-1">Время</label>
+              <input type="checkbox" name="spoller-form-filter-time-2" id="spoller-form-filter-time-2">
+              <label tabindex="0" for="spoller-form-filter-time-2">Время</label>
+              <input type="checkbox" name="spoller-form-filter-time-3" id="spoller-form-filter-time-3">
+              <label tabindex="0" for="spoller-form-filter-time-3">Время</label>
+              <input type="checkbox" name="spoller-form-filter-time-4" id="spoller-form-filter-time-4">
+              <label tabindex="0" for="spoller-form-filter-time-4">Время</label>
             </div>
           </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
-            </div>
-          </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/2.jpg" alt="Book cover" width="130" height="184">
-            </div>
-          </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
-            </div>
-          </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/2.jpg" alt="Book cover" width="130" height="184">
-            </div>
-          </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
-            </div>
-          </div>
-          <div class="slider-recomendation-home__slide swiper-slide">
-            <div class="slider-recomendation-home__image-ibg">
-              <img src="img/images/book-cover/2.jpg" alt="Book cover" width="130" height="184">
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">МЕСТО ДЕЙСТВИЯ:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-filter-place-1" id="spoller-form-filter-place-1">
+              <label tabindex="0" for="spoller-form-filter-place-1">Место</label>
+              <input type="checkbox" name="spoller-form-filter-place-2" id="spoller-form-filter-place-2">
+              <label tabindex="0" for="spoller-form-filter-place-2">Место</label>
+              <input type="checkbox" name="spoller-form-filter-place-3" id="spoller-form-filter-place-3">
+              <label tabindex="0" for="spoller-form-filter-place-3">Место</label>
+              <input type="checkbox" name="spoller-form-filter-place-4" id="spoller-form-filter-place-4">
+              <label tabindex="0" for="spoller-form-filter-place-4">Место</label>
             </div>
           </div>
         </div>
-        <a href="#" class="slider-recomendation-home__link">СМОТРЕТЬ ВСЕ</a>
-      </div>
+        <div class="form-filter__button">
+          <button type="submit">Фильтровать</button>
+        </div>
+      </form>
+    </div>
+    <div class="filter__inner filter__inner_anti">
+      <form action="#" class="filter__form form-filter" id="form-antifilter">
+        <div class="form-filter__title">АНТИФИЛЬТР:</div>
+        <div data-spollers class="form-filter__spoller spoller-form-filter">
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">КНИГА ПО НАСТРОЕНИЮ:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-antifilter-mood-1" id="spoller-form-antifilter-mood-1">
+              <label tabindex="0" for="spoller-form-antifilter-mood-1">Настроение</label>
+              <input type="checkbox" name="spoller-form-antifilter-mood-2" id="spoller-form-antifilter-mood-2">
+              <label tabindex="0" for="spoller-form-antifilter-mood-2">Настроение</label>
+              <input type="checkbox" name="spoller-form-antifilter-mood-3" id="spoller-form-antifilter-mood-3">
+              <label tabindex="0" for="spoller-form-antifilter-mood-3">Настроение</label>
+              <input type="checkbox" name="spoller-form-antifilter-mood-4" id="spoller-form-antifilter-mood-4">
+              <label tabindex="0" for="spoller-form-antifilter-mood-4">Настроение</label>
+              <input type="checkbox" name="spoller-form-antifilter-mood-5" id="spoller-form-antifilter-mood-5">
+              <label tabindex="0" for="spoller-form-antifilter-mood-5">Настроение</label>
+              <input type="checkbox" name="spoller-form-antifilter-mood-6" id="spoller-form-antifilter-mood-6">
+              <label tabindex="0" for="spoller-form-antifilter-mood-6">Настроение</label>
+            </div>
+          </div>
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">ФОРМА:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-antifilter-form-1" id="spoller-form-antifilter-form-1">
+              <label tabindex="0" for="spoller-form-antifilter-form-1">Роман</label>
+              <input type="checkbox" name="spoller-form-antifilter-form-2" id="spoller-form-antifilter-form-2">
+              <label tabindex="0" for="spoller-form-antifilter-form-2">Повесть</label>
+              <input type="checkbox" name="spoller-form-antifilter-form-3" id="spoller-form-antifilter-form-3">
+              <label tabindex="0" for="spoller-form-antifilter-form-3">Рассказ</label>
+              <input type="checkbox" name="spoller-form-antifilter-form-4" id="spoller-form-antifilter-form-4">
+              <label tabindex="0" for="spoller-form-antifilter-form-4">Сборник</label>
+              <input type="checkbox" name="spoller-form-antifilter-form-5" id="spoller-form-antifilter-form-5">
+              <label tabindex="0" for="spoller-form-antifilter-form-5">Поэма</label>
+            </div>
+          </div>
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">ЖАНР:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-antifilter-genre-1" id="spoller-form-antifilter-genre-1">
+              <label tabindex="0" for="spoller-form-antifilter-genre-1">Жанр</label>
+              <input type="checkbox" name="spoller-form-antifilter-genre-2" id="spoller-form-antifilter-genre-2">
+              <label tabindex="0" for="spoller-form-antifilter-genre-2">Жанр</label>
+              <input type="checkbox" name="spoller-form-antifilter-genre-3" id="spoller-form-antifilter-genre-3">
+              <label tabindex="0" for="spoller-form-antifilter-genre-3">Жанр</label>
+              <input type="checkbox" name="spoller-form-antifilter-genre-4" id="spoller-form-antifilter-genre-4">
+              <label tabindex="0" for="spoller-form-antifilter-genre-4">Жанр</label>
+              <input type="checkbox" name="spoller-form-antifilter-genre-5" id="spoller-form-antifilter-genre-5">
+              <label tabindex="0" for="spoller-form-antifilter-genre-5">Жанр</label>
+              <input type="checkbox" name="spoller-form-antifilter-genre-6" id="spoller-form-antifilter-genre-6">
+              <label tabindex="0" for="spoller-form-antifilter-genre-6">Жанр</label>
+            </div>
+          </div>
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">ВРЕМЯ ДЕЙСТВИЯ:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-antifilter-time-1" id="spoller-form-antifilter-time-1">
+              <label tabindex="0" for="spoller-form-antifilter-time-1">Время</label>
+              <input type="checkbox" name="spoller-form-antifilter-time-2" id="spoller-form-antifilter-time-2">
+              <label tabindex="0" for="spoller-form-antifilter-time-2">Время</label>
+              <input type="checkbox" name="spoller-form-antifilter-time-3" id="spoller-form-antifilter-time-3">
+              <label tabindex="0" for="spoller-form-antifilter-time-3">Время</label>
+              <input type="checkbox" name="spoller-form-antifilter-time-4" id="spoller-form-antifilter-time-4">
+              <label tabindex="0" for="spoller-form-antifilter-time-4">Время</label>
+            </div>
+          </div>
+          <div class="spoller-form-filter__item">
+            <div data-spoller class="spoller-form-filter__title">МЕСТО ДЕЙСТВИЯ:</div>
+            <div class="spoller-form-filter__body">
+              <input type="checkbox" name="spoller-form-antifilter-place-1" id="spoller-form-antifilter-place-1">
+              <label tabindex="0" for="spoller-form-antifilter-place-1">Место</label>
+              <input type="checkbox" name="spoller-form-antifilter-place-2" id="spoller-form-antifilter-place-2">
+              <label tabindex="0" for="spoller-form-antifilter-place-2">Место</label>
+              <input type="checkbox" name="spoller-form-antifilter-place-3" id="spoller-form-antifilter-place-3">
+              <label tabindex="0" for="spoller-form-antifilter-place-3">Место</label>
+              <input type="checkbox" name="spoller-form-antifilter-place-4" id="spoller-form-antifilter-place-4">
+              <label tabindex="0" for="spoller-form-antifilter-place-4">Место</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-filter__button">
+          <button type="submit">Фильтровать</button>
+        </div>
+      </form>
     </div>
   </div>
-</section>
+  <button data-show-text="Показать фильтр" data-hide-text="Скрыть фильтр" class="asaid-book-page__show-hide-button">Показат фильтр</button>
+</aside>
 
-<div class="base">
-  <div class="base__container">
-    <div class="books">
+    <section class="base-book-page">
+  <div class="books">
   <div class="books__inner">
     <div class="book-card">
   <div class="book-card__inner">
@@ -891,204 +993,37 @@
 </div>
 
   </div>
-</div>
-
-    <aside class="aside">
-  <div class="aside__title">ПОСЛЕДНИЕ ОТЗЫВЫ:</div>
-  <div class="aside__inner">
-    <div class="arrows-slider-aside-prev"></div>
-    <div class="arrows-slider-aside-next"></div>
-    <div class="aside__slider slider-aside swiper">
-      <div class="slider-aside__wrapper swiper-wrapper">
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Пока дышу</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Наталья Ильина</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/1.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem iste itaque vero, sit eaque
-              dolores at doloribus quae repellendus incidunt voluptatem saepe in explicabo harum, suscipit eligendi, pariatur veritatis?</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Ревизор и его цирк</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Нина Цуканова</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/2.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Тайна дома № 12...</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Владимир Торин</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/3.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">По-другому</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Анна Евдо</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/4.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Железо и серебро</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Мария Гуцол</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/5.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Звезды малого круга</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Олария Тойе</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Звезды малого круга</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Олария Тойе</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Звезды малого круга</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Олария Тойе</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-        <article class="slider-aside__slide comment-card swiper-slide">
-          <div class="comment-card__header">
-            <a href="#" class="comment-card__label">Звезды малого круга</a>
-            <div class="comment-card__date">22.05.2022</div>
-          </div>
-          <div class="comment-card__author">Олария Тойе</div>
-          <div class="comment-card__inner">
-            <div class="comment-card__cover">
-              <a href="#" class="comment-card__image-ibg">
-                <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-              </a>
-            </div>
-            <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-              менее
-              стандартное заполнение шаблона, а также
-              реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-          </div>
-          <a href="#" class="comment-card__link">Читать дальше</a>
-          <div class="comment-card__reader">Читатель N</div>
-        </article>
-      </div>
+  <div class="books__pagination pagination-books">
+    <div class="pagination-books__row pagination-books__row_left">
+      <a class="pagination-books__button" href="#">Первая</a>
+      <a class="pagination-books__button" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="#left"></use>
+        </svg>
+      </a>
     </div>
-
-  </div>
-</aside>
-
+    <div class="pagination-books__row pagination-books__row_center">
+      <a class="pagination-books__button" href="#">1</a>
+      <a class="pagination-books__button" href="#">2</a>
+      <span class="pagination-books__button pagination-books__button_no-touch">&hellip;</span>
+      <a class="pagination-books__button" href="#">19</a>
+      <a class="pagination-books__button" href="#">20</a>
+    </div>
+    <div class="pagination-books__row pagination-books__row_right">
+      <a class="pagination-books__button" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="#right"></use>
+        </svg>
+      </a>
+      <a class="pagination-books__button" href="#">Последняя</a>
+    </div>
   </div>
 </div>
+
+</section>
+
+  </div>
+</section>
 
 <div class="books books_paddings">
   <div class="book__container">
@@ -1558,201 +1493,6 @@
   </div>
 </div>
 
-<div class="blog">
-  <div class="blog__container">
-    <div class="blog__title">В БЛОГАХ:</div>
-    <div class="blog__inner">
-      <div class="arrows-slider-blog-prev"></div>
-      <div class="arrows-slider-blog-next"></div>
-      <div class="blog__slider slider-blog swiper">
-        <div class="slider-blog__wrapper swiper-wrapper">
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Пока дышу</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Наталья Ильина</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/1.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem iste itaque vero, sit eaque
-                dolores at doloribus quae repellendus incidunt voluptatem saepe in explicabo harum, suscipit eligendi, pariatur veritatis?</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Ревизор и его цирк</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Нина Цуканова</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/2.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Тайна дома № 12...</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Владимир Торин</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/3.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">По-другому</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Анна Евдо</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/4.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Железо и серебро</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Мария Гуцол</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/5.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Звезды малого круга</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Олария Тойе</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Звезды малого круга</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Олария Тойе</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Звезды малого круга</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Олария Тойе</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-          <article class="slider-blog__slide comment-card swiper-slide">
-            <div class="comment-card__header">
-              <a href="#" class="comment-card__label">Звезды малого круга</a>
-              <div class="comment-card__date">22.05.2022</div>
-            </div>
-            <div class="comment-card__author">Олария Тойе</div>
-            <div class="comment-card__inner">
-              <div class="comment-card__cover">
-                <a href="#" class="comment-card__image-ibg">
-                  <img src="img/images/aside/6.jpg" alt="Comment cover image" width="55" height="75">
-                </a>
-              </div>
-              <p class="comment-card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                менее
-                стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не получается при простой</p>
-            </div>
-            <a href="#" class="comment-card__link">Читать дальше</a>
-            <div class="comment-card__reader">Читатель N</div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 
     </main>
     <footer class="footer">
@@ -1794,234 +1534,6 @@
     <div class="footer__container footer__container_decor"></div>
   </div>
 </footer>
-
-    <div data-popup class="filter" id="filter">
-  <div data-popup-inner class="filter__inner">
-    <div data-popup-close class="filter__close"></div>
-    <form action="#" class="filter__form form-filter" id="form-filter">
-      <div class="form-filter__title">ФИЛЬТР:</div>
-      <div class="form-filter__checkboxes">
-        <input type="checkbox" name="form-filter-journal" id="form-filter-journal">
-        <label tabindex="0" for="form-filter-journal">Крафтовый журнал</label>
-        <input type="checkbox" name="form-filter-shtormo" id="form-filter-shtormo">
-        <label tabindex="0" for="form-filter-shtormo">Штормо-книги</label>
-      </div>
-      <div data-spollers class="form-filter__spoller spoller-form-filter">
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">КНИГА ПО НАСТРОЕНИЮ:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-filter-mood-1" id="spoller-form-filter-mood-1">
-            <label tabindex="0" for="spoller-form-filter-mood-1">Настроение</label>
-            <input type="checkbox" name="spoller-form-filter-mood-2" id="spoller-form-filter-mood-2">
-            <label tabindex="0" for="spoller-form-filter-mood-2">Настроение</label>
-            <input type="checkbox" name="spoller-form-filter-mood-3" id="spoller-form-filter-mood-3">
-            <label tabindex="0" for="spoller-form-filter-mood-3">Настроение</label>
-            <input type="checkbox" name="spoller-form-filter-mood-4" id="spoller-form-filter-mood-4">
-            <label tabindex="0" for="spoller-form-filter-mood-4">Настроение</label>
-            <input type="checkbox" name="spoller-form-filter-mood-5" id="spoller-form-filter-mood-5">
-            <label tabindex="0" for="spoller-form-filter-mood-5">Настроение</label>
-            <input type="checkbox" name="spoller-form-filter-mood-6" id="spoller-form-filter-mood-6">
-            <label tabindex="0" for="spoller-form-filter-mood-6">Настроение</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">ФОРМА:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-filter-form-1" id="spoller-form-filter-form-1">
-            <label tabindex="0" for="spoller-form-filter-form-1">Роман</label>
-            <input type="checkbox" name="spoller-form-filter-form-2" id="spoller-form-filter-form-2">
-            <label tabindex="0" for="spoller-form-filter-form-2">Повесть</label>
-            <input type="checkbox" name="spoller-form-filter-form-3" id="spoller-form-filter-form-3">
-            <label tabindex="0" for="spoller-form-filter-form-3">Рассказ</label>
-            <input type="checkbox" name="spoller-form-filter-form-4" id="spoller-form-filter-form-4">
-            <label tabindex="0" for="spoller-form-filter-form-4">Сборник</label>
-            <input type="checkbox" name="spoller-form-filter-form-5" id="spoller-form-filter-form-5">
-            <label tabindex="0" for="spoller-form-filter-form-5">Поэма</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">ЖАНР:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-filter-genre-1" id="spoller-form-filter-genre-1">
-            <label tabindex="0" for="spoller-form-filter-genre-1">Жанр</label>
-            <input type="checkbox" name="spoller-form-filter-genre-2" id="spoller-form-filter-genre-2">
-            <label tabindex="0" for="spoller-form-filter-genre-2">Жанр</label>
-            <input type="checkbox" name="spoller-form-filter-genre-3" id="spoller-form-filter-genre-3">
-            <label tabindex="0" for="spoller-form-filter-genre-3">Жанр</label>
-            <input type="checkbox" name="spoller-form-filter-genre-4" id="spoller-form-filter-genre-4">
-            <label tabindex="0" for="spoller-form-filter-genre-4">Жанр</label>
-            <input type="checkbox" name="spoller-form-filter-genre-5" id="spoller-form-filter-genre-5">
-            <label tabindex="0" for="spoller-form-filter-genre-5">Жанр</label>
-            <input type="checkbox" name="spoller-form-filter-genre-6" id="spoller-form-filter-genre-6">
-            <label tabindex="0" for="spoller-form-filter-genre-6">Жанр</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">ВРЕМЯ ДЕЙСТВИЯ:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-filter-time-1" id="spoller-form-filter-time-1">
-            <label tabindex="0" for="spoller-form-filter-time-1">Время</label>
-            <input type="checkbox" name="spoller-form-filter-time-2" id="spoller-form-filter-time-2">
-            <label tabindex="0" for="spoller-form-filter-time-2">Время</label>
-            <input type="checkbox" name="spoller-form-filter-time-3" id="spoller-form-filter-time-3">
-            <label tabindex="0" for="spoller-form-filter-time-3">Время</label>
-            <input type="checkbox" name="spoller-form-filter-time-4" id="spoller-form-filter-time-4">
-            <label tabindex="0" for="spoller-form-filter-time-4">Время</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">МЕСТО ДЕЙСТВИЯ:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-filter-place-1" id="spoller-form-filter-place-1">
-            <label tabindex="0" for="spoller-form-filter-place-1">Место</label>
-            <input type="checkbox" name="spoller-form-filter-place-2" id="spoller-form-filter-place-2">
-            <label tabindex="0" for="spoller-form-filter-place-2">Место</label>
-            <input type="checkbox" name="spoller-form-filter-place-3" id="spoller-form-filter-place-3">
-            <label tabindex="0" for="spoller-form-filter-place-3">Место</label>
-            <input type="checkbox" name="spoller-form-filter-place-4" id="spoller-form-filter-place-4">
-            <label tabindex="0" for="spoller-form-filter-place-4">Место</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-filter__button">
-        <button type="submit">Фильтровать</button>
-      </div>
-    </form>
-  </div>
-  <div class="filter__inner filter__inner_anti">
-    <form action="#" class="filter__form form-filter" id="form-antifilter">
-      <div class="form-filter__title">АНТИФИЛЬТР:</div>
-      <div data-spollers class="form-filter__spoller spoller-form-filter">
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">КНИГА ПО НАСТРОЕНИЮ:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-antifilter-mood-1" id="spoller-form-antifilter-mood-1">
-            <label tabindex="0" for="spoller-form-antifilter-mood-1">Настроение</label>
-            <input type="checkbox" name="spoller-form-antifilter-mood-2" id="spoller-form-antifilter-mood-2">
-            <label tabindex="0" for="spoller-form-antifilter-mood-2">Настроение</label>
-            <input type="checkbox" name="spoller-form-antifilter-mood-3" id="spoller-form-antifilter-mood-3">
-            <label tabindex="0" for="spoller-form-antifilter-mood-3">Настроение</label>
-            <input type="checkbox" name="spoller-form-antifilter-mood-4" id="spoller-form-antifilter-mood-4">
-            <label tabindex="0" for="spoller-form-antifilter-mood-4">Настроение</label>
-            <input type="checkbox" name="spoller-form-antifilter-mood-5" id="spoller-form-antifilter-mood-5">
-            <label tabindex="0" for="spoller-form-antifilter-mood-5">Настроение</label>
-            <input type="checkbox" name="spoller-form-antifilter-mood-6" id="spoller-form-antifilter-mood-6">
-            <label tabindex="0" for="spoller-form-antifilter-mood-6">Настроение</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">ФОРМА:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-antifilter-form-1" id="spoller-form-antifilter-form-1">
-            <label tabindex="0" for="spoller-form-antifilter-form-1">Роман</label>
-            <input type="checkbox" name="spoller-form-antifilter-form-2" id="spoller-form-antifilter-form-2">
-            <label tabindex="0" for="spoller-form-antifilter-form-2">Повесть</label>
-            <input type="checkbox" name="spoller-form-antifilter-form-3" id="spoller-form-antifilter-form-3">
-            <label tabindex="0" for="spoller-form-antifilter-form-3">Рассказ</label>
-            <input type="checkbox" name="spoller-form-antifilter-form-4" id="spoller-form-antifilter-form-4">
-            <label tabindex="0" for="spoller-form-antifilter-form-4">Сборник</label>
-            <input type="checkbox" name="spoller-form-antifilter-form-5" id="spoller-form-antifilter-form-5">
-            <label tabindex="0" for="spoller-form-antifilter-form-5">Поэма</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">ЖАНР:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-antifilter-genre-1" id="spoller-form-antifilter-genre-1">
-            <label tabindex="0" for="spoller-form-antifilter-genre-1">Жанр</label>
-            <input type="checkbox" name="spoller-form-antifilter-genre-2" id="spoller-form-antifilter-genre-2">
-            <label tabindex="0" for="spoller-form-antifilter-genre-2">Жанр</label>
-            <input type="checkbox" name="spoller-form-antifilter-genre-3" id="spoller-form-antifilter-genre-3">
-            <label tabindex="0" for="spoller-form-antifilter-genre-3">Жанр</label>
-            <input type="checkbox" name="spoller-form-antifilter-genre-4" id="spoller-form-antifilter-genre-4">
-            <label tabindex="0" for="spoller-form-antifilter-genre-4">Жанр</label>
-            <input type="checkbox" name="spoller-form-antifilter-genre-5" id="spoller-form-antifilter-genre-5">
-            <label tabindex="0" for="spoller-form-antifilter-genre-5">Жанр</label>
-            <input type="checkbox" name="spoller-form-antifilter-genre-6" id="spoller-form-antifilter-genre-6">
-            <label tabindex="0" for="spoller-form-antifilter-genre-6">Жанр</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">ВРЕМЯ ДЕЙСТВИЯ:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-antifilter-time-1" id="spoller-form-antifilter-time-1">
-            <label tabindex="0" for="spoller-form-antifilter-time-1">Время</label>
-            <input type="checkbox" name="spoller-form-antifilter-time-2" id="spoller-form-antifilter-time-2">
-            <label tabindex="0" for="spoller-form-antifilter-time-2">Время</label>
-            <input type="checkbox" name="spoller-form-antifilter-time-3" id="spoller-form-antifilter-time-3">
-            <label tabindex="0" for="spoller-form-antifilter-time-3">Время</label>
-            <input type="checkbox" name="spoller-form-antifilter-time-4" id="spoller-form-antifilter-time-4">
-            <label tabindex="0" for="spoller-form-antifilter-time-4">Время</label>
-          </div>
-        </div>
-        <div class="spoller-form-filter__item">
-          <div data-spoller class="spoller-form-filter__title">МЕСТО ДЕЙСТВИЯ:</div>
-          <div class="spoller-form-filter__body">
-            <input type="checkbox" name="spoller-form-antifilter-place-1" id="spoller-form-antifilter-place-1">
-            <label tabindex="0" for="spoller-form-antifilter-place-1">Место</label>
-            <input type="checkbox" name="spoller-form-antifilter-place-2" id="spoller-form-antifilter-place-2">
-            <label tabindex="0" for="spoller-form-antifilter-place-2">Место</label>
-            <input type="checkbox" name="spoller-form-antifilter-place-3" id="spoller-form-antifilter-place-3">
-            <label tabindex="0" for="spoller-form-antifilter-place-3">Место</label>
-            <input type="checkbox" name="spoller-form-antifilter-place-4" id="spoller-form-antifilter-place-4">
-            <label tabindex="0" for="spoller-form-antifilter-place-4">Место</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-filter__button">
-        <button type="submit">Фильтровать</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<div data-popup data-tabs class="login show">
-  <div class="login__background"></div>
-  <div data-popup-inner class="login__inner">
-    <div class="login__buttons buttons-login">
-      <button data-tab="login" class="buttons-login__button active">Авторизация</button>
-      <button data-tab="signin" class="buttons-login__button">Регистрация</button>
-    </div>
-    <div class="login__forms">
-      <form data-id="login" action="#" class="login__form form-login" id="form-login">
-        <div class="form-login__input">
-          <input type="text" name="form-login-log" id="form-login-log" placeholder="Логин" autocomplete="nickname">
-        </div>
-        <div class="form-login__input">
-          <input type="password" name="form-login-password" id="form-login-password" placeholder="Пароль" autocomplete="current-password">
-          <svg width="20" height="20">
-            <use xlink:href="#eye"></use>
-          </svg>
-        </div>
-        <div class="form-login__bottom">
-          <a href="#" class="form-login__link">Забыли пароль?</a>
-          <button type="submit" class="form-login__button">Войти</button>
-        </div>
-      </form>
-      <form data-id="signin" action="#" class="login__form form-login" id="form-signin">
-        <div class="form-login__label">Для регистрации заполните поля ниже</div>
-        <div class="form-login__input">
-          <input type="text" name="form-signin-name" id="form-signin-name" placeholder="Ваше имя" autocomplete="name">
-        </div>
-        <div class="form-login__input">
-          <input type="text" name="form-signin-mail" id="form-signin-mail" placeholder="E-mail" autocomplete="email">
-        </div>
-        <div class="form-login__input">
-          <input type="password" name="form-signin-password" id="form-signin-password" placeholder="Пароль" autocomplete="new-password">
-          <svg width="20" height="20">
-            <use xlink:href="#eye"></use>
-          </svg>
-        </div>
-        <div class="form-login__bottom">
-          <button type="submit" class="form-login__button">Зарегистрироваться</button>
-        </div>
-      </form>
-    </div>
-    <a href="#" class="login__button">Связаться с техподдержкой</a>
-    <button data-popup-close class="login__button">Закрыть окно</button>
-  </div>
-</div>
-
 
   </div>
   <script src="js/script.min.js?_v=20221213025309"></script>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Description">
+  <title>Книжный уютный</title>
+  <link rel="shortcut icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap&_v=20221213025309" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221213025309">
+</head>
+
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="eye" viewBox="0 0 442.04 442.04">
+    <g>
+      <g>
+        <path d="M221.02,341.304c-49.708,0-103.206-19.44-154.71-56.22C27.808,257.59,4.044,230.351,3.051,229.203
+			c-4.068-4.697-4.068-11.669,0-16.367c0.993-1.146,24.756-28.387,63.259-55.881c51.505-36.777,105.003-56.219,154.71-56.219
+			c49.708,0,103.207,19.441,154.71,56.219c38.502,27.494,62.266,54.734,63.259,55.881c4.068,4.697,4.068,11.669,0,16.367
+			c-0.993,1.146-24.756,28.387-63.259,55.881C324.227,321.863,270.729,341.304,221.02,341.304z M29.638,221.021
+			c9.61,9.799,27.747,27.03,51.694,44.071c32.83,23.361,83.714,51.212,139.688,51.212s106.859-27.851,139.688-51.212
+			c23.944-17.038,42.082-34.271,51.694-44.071c-9.609-9.799-27.747-27.03-51.694-44.071
+			c-32.829-23.362-83.714-51.212-139.688-51.212s-106.858,27.85-139.688,51.212C57.388,193.988,39.25,211.219,29.638,221.021z"/>
+      </g>
+      <g>
+        <path d="M221.02,298.521c-42.734,0-77.5-34.767-77.5-77.5c0-42.733,34.766-77.5,77.5-77.5c18.794,0,36.924,6.814,51.048,19.188
+			c5.193,4.549,5.715,12.446,1.166,17.639c-4.549,5.193-12.447,5.714-17.639,1.166c-9.564-8.379-21.844-12.993-34.576-12.993
+			c-28.949,0-52.5,23.552-52.5,52.5s23.551,52.5,52.5,52.5c28.95,0,52.5-23.552,52.5-52.5c0-6.903,5.597-12.5,12.5-12.5
+			s12.5,5.597,12.5,12.5C298.521,263.754,263.754,298.521,221.02,298.521z"/>
+      </g>
+      <g>
+        <path d="M221.02,246.021c-13.785,0-25-11.215-25-25s11.215-25,25-25c13.786,0,25,11.215,25,25S234.806,246.021,221.02,246.021z"/>
+      </g>
+    </g>
+  </symbol>
+  <symbol id="left" viewBox="0 0 48 48">
+    <path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/>
+  </symbol>
+  <symbol id="right" viewBox="0 0 48 48">
+    <path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/>
+  </symbol>
+  <symbol id="settings" viewBox="0 0 48 48">
+    <path d="m19.4 44-1-6.3q-.95-.35-2-.95t-1.85-1.25l-5.9 2.7L4 30l5.4-3.95q-.1-.45-.125-1.025Q9.25 24.45 9.25 24q0-.45.025-1.025T9.4 21.95L4 18l4.65-8.2 5.9 2.7q.8-.65 1.85-1.25t2-.9l1-6.35h9.2l1 6.3q.95.35 2.025.925Q32.7 11.8 33.45 12.5l5.9-2.7L44 18l-5.4 3.85q.1.5.125 1.075.025.575.025 1.075t-.025 1.05q-.025.55-.125 1.05L44 30l-4.65 8.2-5.9-2.7q-.8.65-1.825 1.275-1.025.625-2.025.925l-1 6.3ZM24 30.5q2.7 0 4.6-1.9 1.9-1.9 1.9-4.6 0-2.7-1.9-4.6-1.9-1.9-4.6-1.9-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 2.7 1.9 4.6 1.9 1.9 4.6 1.9Zm0-3q-1.45 0-2.475-1.025Q20.5 25.45 20.5 24q0-1.45 1.025-2.475Q22.55 20.5 24 20.5q1.45 0 2.475 1.025Q27.5 22.55 27.5 24q0 1.45-1.025 2.475Q25.45 27.5 24 27.5Zm0-3.5Zm-2.2 17h4.4l.7-5.6q1.65-.4 3.125-1.25T32.7 32.1l5.3 2.3 2-3.6-4.7-3.45q.2-.85.325-1.675.125-.825.125-1.675 0-.85-.1-1.675-.1-.825-.35-1.675L40 17.2l-2-3.6-5.3 2.3q-1.15-1.3-2.6-2.175-1.45-.875-3.2-1.125L26.2 7h-4.4l-.7 5.6q-1.7.35-3.175 1.2-1.475.85-2.625 2.1L10 13.6l-2 3.6 4.7 3.45q-.2.85-.325 1.675-.125.825-.125 1.675 0 .85.125 1.675.125.825.325 1.675L8 30.8l2 3.6 5.3-2.3q1.2 1.2 2.675 2.05Q19.45 35 21.1 35.4Z"/>
+  </symbol>
+  <symbol id="list" viewBox="0 0 48 48">
+    <path d="M7.5 34q-.65 0-1.075-.425Q6 33.15 6 32.5q0-.65.425-1.075Q6.85 31 7.5 31q.65 0 1.075.425Q9 31.85 9 32.5q0 .65-.425 1.075Q8.15 34 7.5 34Zm0-8.5q-.65 0-1.075-.425Q6 24.65 6 24q0-.65.425-1.075Q6.85 22.5 7.5 22.5q.65 0 1.075.425Q9 23.35 9 24q0 .65-.425 1.075-.425.425-1.075.425Zm0-8.5q-.65 0-1.075-.425Q6 16.15 6 15.5q0-.65.425-1.075Q6.85 14 7.5 14q.65 0 1.075.425Q9 14.85 9 15.5q0 .65-.425 1.075Q8.15 17 7.5 17Zm7 17v-3H42v3Zm0-8.5v-3H42v3Zm0-8.5v-3H42v3Z"/>
+  </symbol>
+  <symbol id="backspace" viewBox="0 0 48 48">
+    <path d="m22.4 31.7 5.6-5.6 5.6 5.6 2.15-2.15L30.1 24l5.55-5.55-2.15-2.15-5.5 5.6-5.6-5.6-2.15 2.15L25.9 24l-5.65 5.55ZM6 24l8.45-11.95q.65-.9 1.55-1.475.9-.575 2-.575h21q1.25 0 2.125.875T42 13v22q0 1.25-.875 2.125T39 38H18q-1.1 0-2-.575-.9-.575-1.55-1.475Zm3.75 0 7.7 11H39V13H17.45ZM39 24V13v22Z"/>
+  </symbol>
+  <symbol id="done" viewBox="0 0 48 48">
+    <path d="M18.9 35.7 7.7 24.5l2.15-2.15 9.05 9.05 19.2-19.2 2.15 2.15Z"/>
+  </symbol>
+</svg>
+
+  <div class="wrapper">
+    <header class="header header__without-form">
+  <div class="header__wrapper">
+    <div class="header__container">
+      <div class="header__logo logo">
+        <a href="#" class="logo__image-ibg">
+          <img src="img/logo.svg" alt="Logo" width="982" height="141">
+        </a>
+        
+      </div>
+      <div class="header__actions actions-header">
+        <button class="actions-header__close">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="actions-header__inner">
+          <a href="#" class="actions-header__link link-header">
+            <div class="link-header__image-ibg">
+              <img src="img/icons/header/letter.svg" alt="Header link icon" width="43" height="48">
+            </div>
+            <span>Личный кабинет</span>
+            <div class="link-header__image-ibg">
+              <img src="img/icons/header/reader.svg" alt="Header link icon" width="99" height="42">
+            </div>
+          </a>
+          <form action="#" class="actions-header__form form-actions-header" id="form-search-header">
+            <div class="form-actions-header__input">
+              <button type="submit"></button>
+              <input type="text" name="form-search-header-search" id="form-search-header-search" placeholder="Найти книгу или автора">
+              <div class="form-actions-header__search-result search-result-form-actions-header">
+                <a href="#" class="search-result-form-actions-header_item">
+                  <div class="search-result-form-actions-header__image-ibg">
+                    <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
+                  </div>
+                  <div class="search-result-form-actions-header__inner">
+                    <div class="search-result-form-actions-header__author">Олария Тойе</div>
+                    <div class="search-result-form-actions-header__name">Звезды Малого Круга</div>
+                  </div>
+                </a>
+                <a href="#" class="search-result-form-actions-header_item">
+                  <div class="search-result-form-actions-header__image-ibg">
+                    <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
+                  </div>
+                  <div class="search-result-form-actions-header__inner">
+                    <div class="search-result-form-actions-header__author">Олария Тойе</div>
+                    <div class="search-result-form-actions-header__name">Звезды Малого Круга</div>
+                  </div>
+                </a>
+                <a href="#" class="search-result-form-actions-header_item">
+                  <div class="search-result-form-actions-header__image-ibg">
+                    <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
+                  </div>
+                  <div class="search-result-form-actions-header__inner">
+                    <div class="search-result-form-actions-header__author">Олария Тойе</div>
+                    <div class="search-result-form-actions-header__name">Звезды Малого Круга</div>
+                  </div>
+                </a>
+                <a href="#" class="search-result-form-actions-header_item">
+                  <div class="search-result-form-actions-header__image-ibg">
+                    <img src="img/images/book-cover/1.jpg" alt="Book cover" width="130" height="184">
+                  </div>
+                  <div class="search-result-form-actions-header__inner">
+                    <div class="search-result-form-actions-header__author">Олария Тойе</div>
+                    <div class="search-result-form-actions-header__name">Звезды Малого Круга</div>
+                  </div>
+                </a>
+                <a href="#" class="search-result-form-actions-header__link">Показать все результаты</a>
+              </div>
+            </div>
+          </form>
+          
+          <nav class="actions-header__nav nav-actions-header">
+            <ul class="nav-actions-header__list">
+              <li class="nav-actions-header__item">
+                <a href="#" class="nav-actions-header__link">Авторское соглашение</a>
+              </li>
+              <li class="nav-actions-header__item">
+                <a href="#" class="nav-actions-header__link">Связаться с техподдержкой</a>
+              </li>
+              <li class="nav-actions-header__item">
+                <a href="#" class="nav-actions-header__link">Еще что-то</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <button class="header__burger burger" aria-label="Button to open (close) the navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="main-book-page">
+  <div class="main-book-page__container">
+    <aside data-da=".actions-header__inner,768,2" class="main-book-page__asaid asaid-book-page">
+  <div class="asaid-book-page__top">
+    <div class="asaid-book-page__image-ibg">
+      <img src="img/images/book-cover/1.jpg" alt="Book cover" width="192" height="267">
+    </div>
+  </div>
+  <div class="asaid-book-page__inner">
+    <div data-spollers class="asaid-book-page__spoller spoller-asaid-book-page">
+      <div class="spoller-asaid-book-page__item">
+        <a href="#" class="spoller-asaid-book-page__title">ОПОВЕЩЕНИЯ</a>
+      </div>
+      <div class="spoller-asaid-book-page__item">
+        <button data-spoller class="spoller-asaid-book-page__title">ЧИТАТЕЛЯМ</button>
+        <div class="spoller-asaid-book-page__body">
+          <ul class="spoller-asaid-book-page__list list-spoller-asaid-book-page">
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Моя библиотека</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Отложенные книги</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Мои подписки</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Мои подписчики</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Мой блог</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Финансы</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Настройка фильтра книг</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Скрытые книги</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Личные данные</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="spoller-asaid-book-page__item">
+        <button data-spoller class="spoller-asaid-book-page__title">АВТОРАМ</button>
+        <div class="spoller-asaid-book-page__body">
+          <ul class="spoller-asaid-book-page__list list-spoller-asaid-book-page">
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Мои книги</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Мой магазин</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Статистика</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Рекламные инструменты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="spoller-asaid-book-page__item">
+        <button data-spoller class="spoller-asaid-book-page__title">МОДЕРАТОРАМ</button>
+        <div class="spoller-asaid-book-page__body">
+          <ul class="spoller-asaid-book-page__list list-spoller-asaid-book-page">
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Книги на модерации</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Анкеты на модерации</a>
+            </li>
+            <li class="list-spoller-asaid-book-page__item">
+              <a href="#" class="list-spoller-asaid-book-page__link">Сообщения об ошибках</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="spoller-asaid-book-page__item">
+        <a href="#" class="spoller-asaid-book-page__title">ВЫХОД</a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+    <section class="base-book-page">
+  <div data-tabs class="login login_not-fixed">
+  <div class="login__inner">
+    <div class="login__buttons buttons-login">
+      <button data-tab="login" class="buttons-login__button active">Авторизация</button>
+      <button data-tab="signin" class="buttons-login__button">Регистрация</button>
+    </div>
+    <div class="login__forms">
+      <form data-id="login" action="#" class="login__form form-login" id="form-login">
+        <div class="form-login__input">
+          <input type="text" name="form-login-log" id="form-login-log" placeholder="Логин" autocomplete="nickname">
+        </div>
+        <div class="form-login__input">
+          <input type="password" name="form-login-password" id="form-login-password" placeholder="Пароль" autocomplete="current-password">
+          <svg width="20" height="20">
+            <use xlink:href="#eye"></use>
+          </svg>
+        </div>
+        <div class="form-login__bottom">
+          <a href="#" class="form-login__link">Забыли пароль?</a>
+          <button type="submit" class="form-login__button">Войти</button>
+        </div>
+      </form>
+      <form data-id="signin" action="#" class="login__form form-login" id="form-signin">
+        <div class="form-login__label">Для регистрации заполните поля ниже</div>
+        <div class="form-login__input">
+          <input type="text" name="form-signin-name" id="form-signin-name" placeholder="Ваше имя" autocomplete="name">
+        </div>
+        <div class="form-login__input">
+          <input type="text" name="form-signin-mail" id="form-signin-mail" placeholder="E-mail" autocomplete="email">
+        </div>
+        <div class="form-login__input">
+          <input type="password" name="form-signin-password" id="form-signin-password" placeholder="Пароль" autocomplete="new-password">
+          <svg width="20" height="20">
+            <use xlink:href="#eye"></use>
+          </svg>
+        </div>
+        <div class="form-login__bottom">
+          <button type="submit" class="form-login__button">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+    <a href="#" class="login__button">Связаться с техподдержкой</a>
+  </div>
+</div>
+
+</section>
+
+  </div>
+</section>
+
+
+    </main>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__inner">
+      <nav class="footer__nav nav-footer">
+        <ul class="nav-footer__list">
+          <li class="nav-footer__item">
+            <a href="#" class="nav-footer__link">Авторское соглашение</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="#" class="nav-footer__link">Связаться с техподдержкой</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="#" class="nav-footer__link">Еще что-то</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="#" class="nav-footer__link">Авторское соглашение</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="#" class="nav-footer__link">Связаться с техподдержкой</a>
+          </li>
+          <li class="nav-footer__item">
+            <a href="#" class="nav-footer__link">Еще что-то</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="footer__button">ПОДДЕРЖАТЬ САЙТ</button>
+      <div class="footer__socials socials-footer">
+        <a href="#" class="socials-footer__item">
+          <div class="socials-footer__image-ibg">
+            <img src="img/icons/footer/vk.png" alt="Footer social icon" width="74" height="72">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__decor">
+    <div class="footer__container footer__container_decor"></div>
+  </div>
+</footer>
+
+  </div>
+  <script src="js/script.min.js?_v=20221213025309"></script>
+<script src="js/import.min.js?_v=20221213025309"></script>
+
+</body>
+
+</html>
